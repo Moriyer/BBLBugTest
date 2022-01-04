@@ -1,0 +1,652 @@
+{
+  "name": "MainManager",
+  "nodeType": "ObjectManager",
+  "storeData": {
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "valueType": "V3"
+    },
+    "rotationQ": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "valueType": "S_V3W"
+    },
+    "scaling": {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "valueType": "V3"
+    }
+  },
+  "childs": [
+    {
+      "name": "SystemManager",
+      "nodeType": "ObjectManager",
+      "storeData": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "valueType": "V3"
+        },
+        "rotationQ": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "valueType": "S_V3W"
+        },
+        "scaling": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "valueType": "V3"
+        }
+      },
+      "childs": [
+        {
+          "name": "SkyBox",
+          "nodeType": "AzureSkyBoxNode",
+          "storeData": {
+            "timeOfDay": 5.06,
+            "longitude": 140.47,
+            "latitude": 31.237975
+          },
+          "order": -1
+        }
+      ]
+    },
+    {
+      "name": "TileManager",
+      "nodeType": "ObjectManager",
+      "storeData": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "valueType": "V3"
+        },
+        "rotationQ": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "valueType": "S_V3W"
+        },
+        "scaling": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "valueType": "V3"
+        }
+      },
+      "childs": [
+        {
+          "name": "Build",
+          "nodeType": "UnityTileRangeLoadManager",
+          "storeData": {
+            "lod0Radius": 8000,
+            "lod1Radius": 16000,
+            "url": "Resources/Model/Unity/GLTF/Proj/Demo/Tile/Build/GLTFPaths_Build.json",
+            "isDraco": false,
+            "isLoadDirectly": true,
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "V3"
+            },
+            "rotationQ": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "S_V3W"
+            },
+            "scaling": {
+              "x": 1,
+              "y": 1,
+              "z": 1,
+              "valueType": "V3"
+            },
+            "isDynamic": false
+          }
+        },
+        {
+          "name": "Region",
+          "nodeType": "UnityTileManager",
+          "storeData": {
+            "url": "Resources/Model/Unity/GLTF/Proj/Demo/Tile/Region/GLTFPaths_Region.json",
+            "isDraco": false,
+            "isLoadDirectly": true,
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "V3"
+            },
+            "rotationQ": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "S_V3W"
+            },
+            "scaling": {
+              "x": 1,
+              "y": 1,
+              "z": 1,
+              "valueType": "V3"
+            },
+            "isDynamic": false
+          }
+        },
+        {
+          "name": "Water",
+          "nodeType": "UnityTileManager",
+          "storeData": {
+            "url": "Resources/Model/Unity/GLTF/Proj/Demo/Tile/Water/GLTFPaths_Water.json",
+            "isDraco": false,
+            "isLoadDirectly": true,
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "V3"
+            },
+            "rotationQ": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "S_V3W"
+            },
+            "scaling": {
+              "x": 1,
+              "y": 1,
+              "z": 1,
+              "valueType": "V3"
+            },
+            "isDynamic": false
+          }
+        },
+        {
+          "name": "Segment",
+          "nodeType": "UnitySegmentTileManager",
+          "storeData": {
+            "colorLevel1": {
+              "r": 0,
+              "g": 0.12549019607843137,
+              "b": 1,
+              "a": 1,
+              "valueType": "Clr4"
+            },
+            "colorLevel2": {
+              "r": 0.5843137254901961,
+              "g": 0.6588235294117647,
+              "b": 0.9137254901960784,
+              "a": 0.5019607843137255,
+              "valueType": "Clr4"
+            },
+            "colorLevel3": {
+              "r": 0,
+              "g": 0,
+              "b": 1,
+              "a": 0.5,
+              "valueType": "Clr4"
+            },
+            "url": "Resources/Model/Unity/GLTF/Proj/Demo/Tile/Segment/GLTFPaths_Segment.json",
+            "isDraco": false,
+            "isLoadDirectly": true,
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "V3"
+            },
+            "rotationQ": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "S_V3W"
+            },
+            "scaling": {
+              "x": 1,
+              "y": 1,
+              "z": 1,
+              "valueType": "V3"
+            },
+            "isDynamic": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "StaticModelManager",
+      "nodeType": "ObjectManager",
+      "storeData": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "valueType": "V3"
+        },
+        "rotationQ": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "valueType": "S_V3W"
+        },
+        "scaling": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "valueType": "V3"
+        }
+      },
+      "childs": [
+        {
+          "name": "FCB Manager",
+          "nodeType": "FCBModelManager",
+          "storeData": {},
+          "order": -999
+        },
+        {
+          "name": "GLTFBuildNode",
+          "nodeType": "GLTFBuildNode",
+          "storeData": {
+            "rootPath": "",
+            "url": "Resources/Model/Unity/GLTF/Proj/Demo/GLTF/Build/Taikang2.gltf",
+            "isDraco": false,
+            "isLoadDirectly": true,
+            "position": {
+              "x": 48.46784591674805,
+              "y": 0,
+              "z": -41.73738098144531,
+              "valueType": "V3"
+            },
+            "rotationQ": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "S_V3W"
+            },
+            "scaling": {
+              "x": 1.1210931539535522,
+              "y": 1.4858478307724,
+              "z": 1.1210931539535522,
+              "valueType": "V3"
+            }
+          }
+        },
+        {
+          "name": "FCBInstanceGroup",
+          "nodeType": "FCBInstanceGroup",
+          "storeData": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "V3"
+            },
+            "rotationQ": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "S_V3W"
+            },
+            "scaling": {
+              "x": 1,
+              "y": 1,
+              "z": 1,
+              "valueType": "V3"
+            }
+          },
+          "childs": [
+            {
+              "name": "FCBInsance",
+              "nodeType": "FCBInsance",
+              "storeData": {
+                "position": {
+                  "x": 202.396484375,
+                  "y": 0,
+                  "z": -110.67127990722656,
+                  "valueType": "V3"
+                },
+                "rotationQ": {
+                  "x": 0,
+                  "y": 1.6490674945383519,
+                  "z": 0,
+                  "valueType": "S_V3W"
+                },
+                "scaling": {
+                  "x": 1.6277017418515196,
+                  "y": 1.627704381942749,
+                  "z": 1.6277017418515196,
+                  "valueType": "V3"
+                },
+                "buildType": "BC",
+                "buildName": "BC_026.gltf"
+              }
+            },
+            {
+              "name": "FCBInsance",
+              "nodeType": "FCBInsance",
+              "storeData": {
+                "position": {
+                  "x": 269.06268310546875,
+                  "y": 0,
+                  "z": -268.5884704589844,
+                  "valueType": "V3"
+                },
+                "rotationQ": {
+                  "x": 0,
+                  "y": -3.12476828705683,
+                  "z": 0,
+                  "valueType": "S_V3W"
+                },
+                "scaling": {
+                  "x": 1.6277022865216089,
+                  "y": 1.627704381942749,
+                  "z": 1.6277022865216089,
+                  "valueType": "V3"
+                },
+                "buildType": "BR",
+                "buildName": "BR_008.gltf"
+              }
+            },
+            {
+              "name": "FCBInsance",
+              "nodeType": "FCBInsance",
+              "storeData": {
+                "position": {
+                  "x": -52.38298797607422,
+                  "y": 8.72985481237265e-7,
+                  "z": -200.14862060546875,
+                  "valueType": "V3"
+                },
+                "rotationQ": {
+                  "x": 2.0314644130440146e-7,
+                  "y": -1.5448914124502529,
+                  "z": -3.882730369959855e-13,
+                  "valueType": "S_V3W"
+                },
+                "scaling": {
+                  "x": 1.627704043250001,
+                  "y": 1.6277039051056243,
+                  "z": 1.627702850785162,
+                  "valueType": "V3"
+                },
+                "buildType": "BC",
+                "buildName": "BC_026.gltf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GroupNode",
+      "nodeType": "GroupNode",
+      "storeData": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "valueType": "V3"
+        },
+        "rotationQ": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "valueType": "S_V3W"
+        },
+        "scaling": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "valueType": "V3"
+        }
+      },
+      "childs": [
+        {
+          "name": "Trailline",
+          "nodeType": "TrailLineNode",
+          "storeData": {
+            "position": {
+              "x": -4.176344871520996,
+              "y": 0,
+              "z": 0,
+              "valueType": "V3"
+            },
+            "rotationQ": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "valueType": "S_V3W"
+            },
+            "scaling": {
+              "x": -1,
+              "y": 1,
+              "z": 1,
+              "valueType": "V3"
+            },
+            "defaultWidth": 100,
+            "lineRadius": 3,
+            "radiusSeg": 8,
+            "sideSeg": 50,
+            "trailCount": 100,
+            "yRange": {
+              "x": 5,
+              "y": 7,
+              "valueType": "V2"
+            },
+            "radiusRange": {
+              "x": 0.7,
+              "y": 1,
+              "valueType": "V2"
+            },
+            "lengthRange": {
+              "x": 2200,
+              "y": 2500,
+              "valueType": "V2"
+            },
+            "speedRange": {
+              "x": 1500,
+              "y": 1800,
+              "valueType": "V2"
+            },
+            "leftLineColors": [
+              {
+                "r": 0.8627,
+                "g": 0.35686,
+                "b": 0.12549,
+                "valueType": "Clr3"
+              },
+              {
+                "r": 0.862,
+                "g": 0.63921,
+                "b": 0.12549,
+                "valueType": "Clr3"
+              },
+              {
+                "r": 0.862,
+                "g": 0.12549,
+                "b": 0.12549,
+                "valueType": "Clr3"
+              }
+            ],
+            "rightLineColors": [],
+            "colorPower": 1,
+            "pBezierSmooth": 0.35,
+            "pBezierMinSmooth": 0.5,
+            "points": [
+              3924.12841796875,
+              0,
+              15019.94921875,
+              233.85984989524863,
+              4057.012451171875,
+              0,
+              14145.6572265625,
+              254.13008529135158,
+              3416.72265625,
+              0,
+              12729.169921875,
+              211.56182970746943,
+              3361.914306640625,
+              0,
+              12039.2685546875,
+              244.52604395078592,
+              4257.994140625,
+              0,
+              10859.3779296875,
+              232.49309959118227,
+              4588.6171875,
+              0,
+              9730.6220703125,
+              181.92407988104912,
+              3949.606689453125,
+              0,
+              9010.3515625,
+              171.1017594153019,
+              3395.380615234375,
+              0,
+              8108.05615234375,
+              266.73444320776775,
+              3582.48046875,
+              0,
+              7335.93115234375,
+              242.1956264076739,
+              3724.111083984375,
+              0,
+              6897.79638671875,
+              244.43766931475753,
+              3831.98779296875,
+              0,
+              6293.94482421875,
+              183.63756709852956,
+              3685.60595703125,
+              0,
+              5704.62939453125,
+              138.71777111738245,
+              2871.08251953125,
+              0,
+              5108.22314453125,
+              208.73668622285462,
+              1699.9420166015625,
+              0,
+              4773.04736328125,
+              183.13750487729033,
+              936.2711791992188,
+              0,
+              4438.806640625,
+              180.62119878190168,
+              379.27960205078125,
+              0,
+              3745.97802734375,
+              184.10237682701356,
+              -176.35232543945312,
+              0,
+              2740.282470703125,
+              151.120301855471,
+              -462.21075439453125,
+              0,
+              2073.821533203125,
+              165.63182792461748,
+              -303.3880920410156,
+              0,
+              1411.494384765625,
+              165.20070818636347,
+              202.40695190429688,
+              0,
+              725.9193725585938,
+              193.07772336665687,
+              643.1939697265625,
+              0,
+              268.39556884765625,
+              203.97347668517457,
+              1096.027099609375,
+              0,
+              -238.69735717773438,
+              201.8367262522593,
+              1165.9859619140625,
+              0,
+              -721.6538696289062,
+              196.91529952394623,
+              817.2435913085938,
+              0,
+              -1108.135986328125,
+              225.48486524990062,
+              312.9054870605469,
+              0,
+              -1352.5704345703125,
+              230.06255083647798,
+              -502.1292419433594,
+              0,
+              -1533.435546875,
+              227.5640970216164,
+              -1713.88134765625,
+              0,
+              -1537.5780029296875,
+              227.97126864927574,
+              -2654.689453125,
+              0,
+              -1690.8682861328125,
+              225.12319569469767,
+              -3661.60791015625,
+              0,
+              -2284.256103515625,
+              234.49497635684648,
+              -4644.82373046875,
+              0,
+              -3086.687744140625,
+              250.37595056791295,
+              -5648.64453125,
+              0,
+              -4095.96630859375,
+              259.0026008410001,
+              -6105.5693359375,
+              0,
+              -5209.87060546875,
+              270.1337694400219,
+              -5827.59228515625,
+              0,
+              -6434.41064453125,
+              250.01188483955704,
+              -5358.11279296875,
+              0,
+              -7537.634765625,
+              245.74307283645044,
+              -5364.56982421875,
+              0,
+              -8799.673828125,
+              248.40247704425377,
+              -5418.802734375,
+              0,
+              -9630.15625,
+              228.1148694312223,
+              -5281.85107421875,
+              0,
+              -10599.189453125,
+              259.61099221758155,
+              -5016.94189453125,
+              0,
+              -11164.5390625,
+              268.3300613837985,
+              -3325.096923828125,
+              0,
+              -11969.822265625,
+              251.2507287998098,
+              -1105.9927978515625,
+              0,
+              -13222.634765625,
+              268.7122709818288,
+              149.670166015625,
+              0,
+              -14485.98046875,
+              157.5425442183211
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
